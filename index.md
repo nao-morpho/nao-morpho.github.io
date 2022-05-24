@@ -1,6 +1,6 @@
 ## NAO morpho
 
-You can use the [nao-morpho](https://github.com/nao-morpho/nao-morpho.github.io/edit/main/index.md) to download the script and run it.
+You can use the [nao-morpho](https://github.com/nao-morpho/nao-morpho.github.io) to download the script and run it.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
