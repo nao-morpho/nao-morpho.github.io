@@ -21,6 +21,9 @@ from tqdm import tqdm
 from metrics import StreamSegMetrics
 import time
 from torch.utils import data
+from PIL import Image
+import matplotlib
+import matplotlib.pyplot as plt
 
 #parser = argparse.ArgumentParser()
 
@@ -148,7 +151,8 @@ def get_dataset(args):
 
 def valid(args,  model, valid_queue, device, metrics, criterion=None):
     metrics.reset()
-    nn.CrossEntropyLoss(ignore_index=255, reduction='mean')
+    if criterion == None:
+        criterion = nn.CrossEntropyLoss(ignore_index=255, reduction='mean')
 
     interval_loss = 0
     # set the mode of model to eval
@@ -159,6 +163,7 @@ def valid(args,  model, valid_queue, device, metrics, criterion=None):
         denorm = utils_deeplabv3plus.Denormalize(mean=[0.485, 0.456, 0.406],
                                    std=[0.229, 0.224, 0.225])
         img_id = 0
+
 
     with torch.no_grad():
         for step, (images, labels) in tqdm(enumerate(valid_queue)):
@@ -171,9 +176,37 @@ def valid(args,  model, valid_queue, device, metrics, criterion=None):
 
             metrics.update(targets, preds)
 
+            print(outs.size())
+            print(labels.size())
+            #exit()
             loss = criterion(outs, labels)
             np_loss = loss.detach().cpu().numpy()
             interval_loss += np_loss
+
+            if args.save_val_results:
+                for i in range(len(images)):
+                    image = images[i].detach().cpu().numpy()
+                    target = targets[i]
+                    pred = preds[i]
+
+                    image = (denorm(image) * 255).transpose(1, 2, 0).astype(np.uint8)
+                    target = valid_queue.dataset.decode_target(target).astype(np.uint8)
+                    pred = valid_queue.dataset.decode_target(pred).astype(np.uint8)
+
+                    Image.fromarray(image).save('results/%d_image.png' % img_id)
+                    Image.fromarray(target).save('results/%d_target.png' % img_id)
+                    Image.fromarray(pred).save('results/%d_pred.png' % img_id)
+
+                    fig = plt.figure()
+                    plt.imshow(image)
+                    plt.axis('off')
+                    plt.imshow(pred, alpha=0.7)
+                    ax = plt.gca()
+                    ax.xaxis.set_major_locator(matplotlib.ticker.NullLocator())
+                    ax.yaxis.set_major_locator(matplotlib.ticker.NullLocator())
+                    plt.savefig('results/%d_overlay.png' % img_id, bbox_inches='tight', pad_inches=0)
+                    plt.close()
+                    img_id += 1
 
         interval_loss = interval_loss/step
 
@@ -397,15 +430,33 @@ def main():
             "best_score": best_score,
         }, path)
         print("Model saved as %s" % path)
+
     # Restore
+    utils_deeplabv3plus.mkdir('checkpoints')
     best_score = 0.0
     cur_itrs = 0
     cur_epochs = 0
+    if args.ckpt is not None and os.path.isfile(args.ckpt):
+        # https://github.com/VainF/DeepLabV3Plus-Pytorch/issues/8#issuecomment-605601402, @PytaichukBohdan
+        checkpoint = torch.load(args.ckpt, map_location=torch.device('cpu'))
+        model.load_state_dict(checkpoint["model_state"])
+        model = nn.DataParallel(model)
+        model.to(device)
+        if args.continue_training:
+            optimizer.load_state_dict(checkpoint["optimizer_state"])
+            scheduler.load_state_dict(checkpoint["scheduler_state"])
+            cur_itrs = checkpoint["cur_itrs"]
+            best_score = checkpoint['best_score']
+            print("Training state restored from %s" % args.ckpt)
+        print("Model restored from %s" % args.ckpt)
+        del checkpoint  # free memory
+    else:
+        print("[!] Retrain")
+        model = nn.DataParallel(model)
+        model.to(device)
 
-    utils_deeplabv3plus.mkdir('checkpoints')
-    logging.info("[!] Retrain")
-    model = nn.DataParallel(model)
-    model.to(device)
+    # model = nn.DataParallel(model)
+    # model.to(device)
 
     # ==========   Train Loop   ==========#
     denorm = utils_deeplabv3plus.Denormalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])  # denormalization for ori images
@@ -413,7 +464,7 @@ def main():
     if args.test_only:
         model.eval()
         val_score, ret_samples = valid(
-            args=args, model=model, loader=val_loader, device=device, metrics=metrics, ret_samples_ids=vis_sample_id)
+            args=args, model=model, valid_queue=val_loader, device=device, metrics=metrics)
         print(metrics.to_str(val_score))
         return
 
