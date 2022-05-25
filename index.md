@@ -14,7 +14,6 @@
 <center>
 <sup>d</sup>ayao@comp.nus.edu.sg,School of Computing National University of Singapore
 </center> 
-<center>[Paper](https://arxiv.org/abs/2106.07714)</center>
 [Paper](https://arxiv.org/abs/2106.07714) &nbsp; &nbsp; &nbsp; &nbsp; [Code](https://github.com/nao-morpho/nao-morpho.github.io)
   
 ### Abstract
