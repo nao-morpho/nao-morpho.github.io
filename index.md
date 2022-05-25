@@ -15,7 +15,7 @@
 <sup>d</sup>ayao@comp.nus.edu.sg,School of Computing National University of Singapore
 </center> 
 <div align=center> 
-<a href=https://arxiv.org/abs/2106.07714> Paper</a>
+[Paper](https://arxiv.org/abs/2106.07714)
 </div>
 
   
