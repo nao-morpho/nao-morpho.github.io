@@ -15,7 +15,7 @@
 <sup>d</sup>ayao@comp.nus.edu.sg,School of Computing National University of Singapore
 </center> 
 <div align=center> 
-<font size = 12><a href=https://arxiv.org/abs/2106.07714> Paper</a></font>&nbsp; &nbsp; &nbsp; &nbsp;<font size=12><a href=https://github.com/nao-morpho/nao-morpho.github.io> Code</a></font>
+<a href=https://arxiv.org/abs/2106.07714> Paper</a>&nbsp; &nbsp; &nbsp; &nbsp;<a href=https://github.com/nao-morpho/nao-morpho.github.io> Code</a>
 </div>
 
   
