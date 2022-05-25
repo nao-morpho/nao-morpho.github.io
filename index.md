@@ -18,10 +18,7 @@
 <center> 
 [Paper](https://arxiv.org/abs/2106.07714)[Code](https://github.com/nao-morpho/nao-morpho.github.io)
 </center>
-
-<center>
-<font size=8>Abstract<font>
-</center>
+  
 ### aaa
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
