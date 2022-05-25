@@ -1,4 +1,4 @@
-# Deep Morphological Networks with Neural Architecture Search
+# Learning Deep Morphological Networks with Neural Architecture Search
 This is a project to study the effect of morphological network on image classification and edge detection based on Neural Architecture Optimization.
 
 There are two sub-projects, one is for image classification which is NAO-V2 and the other is for edge detection which is NAO_Seg_v2:
