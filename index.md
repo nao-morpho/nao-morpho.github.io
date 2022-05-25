@@ -18,7 +18,7 @@
 [<font size=6>Paper</font>](https://arxiv.org/abs/2106.07714) &nbsp; &nbsp; &nbsp; &nbsp; [<font size=6>Code</font>](https://github.com/nao-morpho/nao-morpho.github.io)
  </div>
  <div align=center>
-<a href=https://arxiv.org/abs/2106.07714><font size=6>Paper<\/font></a> &nbsp; &nbsp; &nbsp; &nbsp; <a href=https://github.com/nao-morpho/nao-morpho.github.io><font size=6>Code</font>\</a>
+<a href=https://arxiv.org/abs/2106.07714><font size=6>Paper\</font></a> &nbsp; &nbsp; &nbsp; &nbsp; <a href=https://github.com/nao-morpho/nao-morpho.github.io><font size=6>Code</font>\</a>
  </div>
 
 ### Abstract
