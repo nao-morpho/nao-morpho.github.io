@@ -16,7 +16,7 @@
 </center> 
 
 <center> 
-[Paper](https://arxiv.org/abs/2106.07714)   [Code](https://github.com/nao-morpho/nao-morpho.github.io) [Jekyll](https://jekyllrb.com/)
+[Paper](https://arxiv.org/abs/2106.07714)[Code](https://github.com/nao-morpho/nao-morpho.github.io)
 </center>
 
 <center>
