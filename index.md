@@ -15,10 +15,10 @@
 <sup>d</sup>ayao@comp.nus.edu.sg,School of Computing National University of Singapore
 </center> 
 <div align=center> 
-<a href=https://arxiv.org/abs/2106.07714> Paper\</a>
+<a href=https://arxiv.org/abs/2106.07714>Paper</a>
 </div>
 <div align=center> 
-<a href=[https://arxiv.org/abs/2106.07714](https://github.com/nao-morpho/nao-morpho.github.io)> Code\</a>
+<a href=[https://arxiv.org/abs/2106.07714](https://github.com/nao-morpho/nao-morpho.github.io)>Code</a>
 </div>
   
 ### Abstract
