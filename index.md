@@ -1,5 +1,4 @@
-
-
+## Learning Deep Morphological Networks with Neural Architecture Search
 Yufei Hua,∗, Nacim Belkhirb, Jesus Anguloc, Angela Yaod, Gianni Franchia,∗
 a[yufei.hu.2021,gianni.franchi]@ensta-paris.fr, U2IS, ENSTA Paris, Institut Polytechnique de Paris
 bnacim.belkhir@safrangroup.com, Safrantech, Safran Group cjesus.angulo@mines-paristech.fr, CMM, Mines ParisTech, PSL Research University dayao@comp.nus.edu.sg,School of Computing National University of Singapore
