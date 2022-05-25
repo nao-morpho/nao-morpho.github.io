@@ -1,6 +1,6 @@
 ## Learning Deep Morphological Networks with Neural Architecture Search
 <center>
-<font color=blue size=24>Yufei Hu<sup>a,∗</sup>, Nacim Belkhir<sup>b</sup>, Jesus Angulo<sup>c</sup>, Angela Yao<sup>d</sup>, Gianni Franchi<sup>a,∗</sup></font>
+<font color=blue>Yufei Hu<sup>a,∗</sup>, Nacim Belkhir<sup>b</sup>, Jesus Angulo<sup>c</sup>, Angela Yao<sup>d</sup>, Gianni Franchi<sup>a,∗</sup></font>
 </center>
 <center>
 <sup>a</sup>[yufei.hu.2021,gianni.franchi]@ensta-paris.fr, U2IS, ENSTA Paris, Institut Polytechnique de Paris
@@ -15,7 +15,9 @@
 <sup>d</sup>ayao@comp.nus.edu.sg,School of Computing National University of Singapore
 </center> 
 
-You can use the [nao-morpho](https://github.com/nao-morpho/nao-morpho.github.io) to download the script and run it.
+<center> 
+<font color=blue size=16>[Paper](https://arxiv.org/abs/2106.07714) [Code](https://github.com/nao-morpho/nao-morpho.github.io) </font>
+</center>
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
