@@ -1,7 +1,7 @@
 ## Learning Deep Morphological Networks with Neural Architecture Search
-Yufei Hua,∗, Nacim Belkhirb, Jesus Anguloc, Angela Yaod, Gianni Franchia,∗
-a[yufei.hu.2021,gianni.franchi]@ensta-paris.fr, U2IS, ENSTA Paris, Institut Polytechnique de Paris
-bnacim.belkhir@safrangroup.com, Safrantech, Safran Group cjesus.angulo@mines-paristech.fr, CMM, Mines ParisTech, PSL Research University dayao@comp.nus.edu.sg,School of Computing National University of Singapore
+Yufei Hu<sup>a,∗</sup>, Nacim Belkhir<sup>b</sup>, Jesus Angulo<sup>c</sup>, Angela Yao<sup>d</sup>, Gianni Franchi<sup>a,∗</sup>
+<sup>a</sup>[yufei.hu.2021,gianni.franchi]@ensta-paris.fr, U2IS, ENSTA Paris, Institut Polytechnique de Paris
+<sup>b</sup>nacim.belkhir@safrangroup.com, Safrantech, Safran Group <sup>c</sup>jesus.angulo@mines-paristech.fr, CMM, Mines ParisTech, PSL Research University <sup>d</sup>ayao@comp.nus.edu.sg,School of Computing National University of Singapore
 
 You can use the [nao-morpho](https://github.com/nao-morpho/nao-morpho.github.io) to download the script and run it.
 
