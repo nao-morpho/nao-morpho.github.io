@@ -1,6 +1,6 @@
 ## Learning Deep Morphological Networks with Neural Architecture Search
 <center>
-Yufei Hu<sup>a,∗</sup>, Nacim Belkhir<sup>b</sup>, Jesus Angulo<sup>c</sup>, Angela Yao<sup>d</sup>, Gianni Franchi<sup>a,∗</sup>
+<font color=blue size=24>Yufei Hu<sup>a,∗</sup>, Nacim Belkhir<sup>b</sup>, Jesus Angulo<sup>c</sup>, Angela Yao<sup>d</sup>, Gianni Franchi<sup>a,∗</sup></font>
 </center>
 <center>
 <sup>a</sup>[yufei.hu.2021,gianni.franchi]@ensta-paris.fr, U2IS, ENSTA Paris, Institut Polytechnique de Paris
