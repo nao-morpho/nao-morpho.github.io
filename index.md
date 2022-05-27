@@ -1,4 +1,5 @@
-## Learning Deep Morphological Networks with Neural Architecture Search
+## <center>Learning Deep Morphological Networks with Neural Architecture Search</center>
+
 <center>
 <font color=blue>Yufei Hu<sup>a,∗</sup>, Nacim Belkhir<sup>b</sup>, Jesus Angulo<sup>c</sup>, Angela Yao<sup>d</sup>, Gianni Franchi<sup>a,∗</sup></font>
 </center>
