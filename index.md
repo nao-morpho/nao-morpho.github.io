@@ -16,6 +16,9 @@
 <sup>d</sup>ayao@comp.nus.edu.sg,School of Computing National University of Singapore
 </center> 
 
+<center>
+<font color=red, size=6>Pattern Recognition 2022</font>
+</center>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [<font size=6>Paper</font>](https://www.sciencedirect.com/science/article/pii/S0031320322003740?via%3Dihub) &nbsp; &nbsp; &nbsp; &nbsp; [<font size=6>Code</font>](https://github.com/giannifranchi/NAO_morpho)
 
 ### Abstract
